@@ -4,18 +4,19 @@ import App from "./App";
 import Layout from "./components/Layout";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
+import Nav from "./components/Nav";
+import Portfolio from "./routes/Portfolio";
 
 const rootElement = document.getElementById("root");
 render(
-  <Layout>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="About" element={<About />} />
-        <Route path="Contact" element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
-  </Layout>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="About" element={<About />} />
+      <Route path="Contact" element={<Contact />} />
+      <Route path="Portfolio" element={<Portfolio />} />
+    </Routes>
+  </BrowserRouter>,
   rootElement
 );
 

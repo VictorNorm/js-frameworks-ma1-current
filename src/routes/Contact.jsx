@@ -1,11 +1,13 @@
 import Heading from "../components/Heading"
+import Nav from "../components/Nav"
 
 function Contact() {
-  return (
+  return (<>
+  <Nav />
     <main>
-        <h2>aosdasd</h2>
         <Heading content="This is the contact page"/>
     </main>
+    </>
   )
 }
 

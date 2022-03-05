@@ -1,10 +1,10 @@
 import React from 'react'
 
+
 function Layout(props) {
-  return (
-      
-    <div>asdpasd{props.children}</div>
-    
+  return (<>
+    <div>Layout component{props.children}</div>
+    </>
   )
 }
 

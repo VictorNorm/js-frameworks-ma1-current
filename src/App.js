@@ -1,19 +1,13 @@
 import "./App.css";
-
-import { Link, Outlet } from "react-router-dom";
+import Heading from "./components/Heading";
+import Nav from "./components/Nav";
+import { Outlet } from "react-router-dom";
 
 export default function App() {
   return (
     <div>
-      <h1>Bookkeeper</h1>
-      <nav
-        style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem",
-        }}
-      >
-        <Link to="/about">About</Link> | <Link to="/contact">Contact</Link>
-      </nav>
+      <Nav />
+      <Heading content="This is the Home page" />
       <Outlet />
     </div>
   );
