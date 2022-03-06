@@ -6,7 +6,6 @@ function Nav() {
     <nav
     style={{
       borderBottom: "solid 1px",
-      paddingBottom: "1rem",
       display: "flex",
       justifyContent: "center",
       alignItems: 'center'

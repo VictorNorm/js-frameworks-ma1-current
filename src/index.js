@@ -1,10 +1,8 @@
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
-import Layout from "./components/Layout";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
-import Nav from "./components/Nav";
 import Portfolio from "./routes/Portfolio";
 
 const rootElement = document.getElementById("root");

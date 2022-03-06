@@ -7,8 +7,10 @@ export default function App() {
   return (
     <div>
       <Nav />
-      <Heading content="This is the Home page" />
-      <Outlet />
+      <main>
+        <Heading content="This is the Home page" />
+        <Outlet />
+      </main>
     </div>
   );
 }
