@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   return (
@@ -8,13 +8,13 @@ function Nav() {
       borderBottom: "solid 1px",
       display: "flex",
       justifyContent: "center",
-      alignItems: 'center'
+      alignItems: "center"
     }}
   ><ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/about">About</Link></li>
-      <li><Link to="/contact">Contact</Link></li>
-      <li><Link to="/portfolio">Portfolio</Link></li>
+      <li><NavLink to="/" activeclassname="navLink--active">Home</NavLink></li>
+      <li><NavLink to="/about">About</NavLink></li>
+      <li><NavLink to="/contact">Contact</NavLink></li>
+      <li><NavLink to="/portfolio">Portfolio</NavLink></li>
   </ul>
   </nav>
   )

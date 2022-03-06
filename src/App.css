@@ -4,6 +4,11 @@
   box-sizing: border-box;
   font-family: "Segoe UI";
 }
+h1 {
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
 nav {
   height: 3rem;
   display: flex;
@@ -18,6 +23,91 @@ nav ul li {
   margin: 0rem 1rem;
 }
 main {
-  max-width: 80%;
-  border: 1px solid black;
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+main ul {
+  text-align: center;
+}
+main img {
+  display: block;
+  margin: 0 auto;
+}
+main p {
+  text-align: center;
+}
+
+/* Nav ------------------------------------------------- */
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Slider ------------------------------------------------- */
+
+.slider {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.slide {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: 200ms;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 200ms;
+  transform: scale(1.01);
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: grey;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+}
+
+.left-arrow {
+  left: -3.25rem;
+}
+
+.right-arrow {
+  right: -4.25rem;
+}
+
+@media screen and (max-width: 500px) {
+  .left-arrow {
+    top: 110%;
+    left: 5rem;
+  }
+
+  .right-arrow {
+    top: 110%;
+    right: 5rem;
+  }
 }
