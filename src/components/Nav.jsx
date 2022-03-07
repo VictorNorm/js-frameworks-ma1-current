@@ -11,7 +11,7 @@ function Nav() {
       alignItems: "center"
     }}
   ><ul>
-      <li><NavLink to="/" activeclassname="navLink--active">Home</NavLink></li>
+      <li><NavLink to="/">Home</NavLink></li>
       <li><NavLink to="/about">About</NavLink></li>
       <li><NavLink to="/contact">Contact</NavLink></li>
       <li><NavLink to="/portfolio">Portfolio</NavLink></li>
